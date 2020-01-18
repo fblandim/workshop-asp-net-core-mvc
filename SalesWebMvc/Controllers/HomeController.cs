@@ -15,12 +15,13 @@ namespace SalesWebMvc.Controllers
 
         public HomeController(ILogger<HomeController> logger)
         {
-            _logger = logger;
+            _logger = logger ;
         }
 
         public IActionResult Index()
         {
-            return View();
+            ViewData["Message"] = "Flávio Landim - 30 anos - 2020";
+            return View(); //Comentario
         }
 
         public IActionResult Privacy()
